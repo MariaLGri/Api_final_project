@@ -5,13 +5,18 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import config.ConfigReader;
 import config.ProjectConfig;
 import config.WebConfig;
+import helpers.Attach;
+import helpers.TestDataHelper;
 import io.qameta.allure.selenide.AllureSelenide;
+import io.restassured.RestAssured;
+import io.restassured.specification.RequestSpecification;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import io.restassured.response.Response;
 
 
 public class TestBase {
-    TestDataHelper testDataHelper = new TestDataHelper();
     private static final WebConfig webConfig = ConfigReader.Instance.read();
     public static String userId;
 
@@ -29,10 +34,16 @@ public class TestBase {
     @BeforeEach
     void setUp() {
         if (userId == null) {
-            userId = testDataHelper.createDefaultTestUser();
+            userId = TestDataHelper.createDefaultTestUser();
         }
     }
 
+    @AfterEach
+    void attachApiResults() {
+        RequestSpecification request = RestAssured.given();
+        Response response = request.when().get().then().extract().response();
+        Attach.attachResponse(response);
+        Attach.attachRequest(request);
+    }
 
 }
-
