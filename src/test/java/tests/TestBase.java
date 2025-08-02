@@ -7,6 +7,8 @@ import config.ProjectConfig;
 import config.WebConfig;
 import helpers.TestDataHelper;
 import io.qameta.allure.selenide.AllureSelenide;
+import io.restassured.RestAssured;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 
@@ -32,6 +34,9 @@ public class TestBase {
         }
     }
 
-
+    @AfterEach
+    void cleanup() {
+        RestAssured.reset();
+    }
 
 }
