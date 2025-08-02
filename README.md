@@ -90,7 +90,7 @@ RestAssured</code>, сборщик - <code>Gradle</code>. <code>JUnit 5</code> �
 <a id="сборка-в-jenkins"></a>
 <p align="center"> 
 
-# <a href="https://jenkins.autotests.cloud/job/035_vacancy_test_home/" target="_blank"><img width="40px" style="vertical-align:middle" src="media/pictures/Jenkins_logo.png" alt="Jenkins Logo"> Сборка в Jenkins
+# <a href="https://jenkins.autotests.cloud/job/035_Api_final_project_GrishinaML/" target="_blank"><img width="40px" style="vertical-align:middle" src="media/pictures/Jenkins_logo.png" alt="Jenkins Logo"> Сборка в Jenkins
 
 </p>
 
@@ -111,7 +111,7 @@ _Работает с любыми языками, гибко настраива�
 Для запуска сборки необходимо перейти в раздел <code> Build with Parameters:</code> и нажать кнопку <code>Build</code>.
 <p align="center">
 
-<img title="Jenkins Build" src="media/pictures/build.PNG">
+<img title="Jenkins Build" src="media/pictures/buildAPI.PNG">
 </p>
 
 После выполнения сборки, в блоке <code>История сборок</code> напротив номера сборки появятся значки <code>Allure
@@ -144,24 +144,22 @@ _Allure Report_ — это визуализированный отчёт о те
 ### ✨ | 📑 Содержание Allure-отчета | ✨
 
 * Шаги теста;
-* Скриншот страницы на последнем шаге;
-* Page Source;
 * Логи браузерной консоли;
-* Видео выполнения автотеста.
+
 
 <br>
 
 ### 🔍 Обзор
 
 <p align="center">
-  <a href="https://jenkins.autotests.cloud/job/035_vacancy_test_home/29/allure/" target="_blank" rel="noopener noreferrer">
+  <a href="https://jenkins.autotests.cloud/job/035_Api_final_project_GrishinaML/8/allure/" target="_blank" rel="noopener noreferrer">
     <img src="media/pictures/allure0.PNG" alt="Allure Overview Dashboard" style="border: 1px solid #ddd; border-radius: 4px; padding: 5px;">
   </a>
 </p>
 
 ### 📂 Группы тестов
 <p align="center">
-  <a href="https://jenkins.autotests.cloud/job/035_vacancy_test_home/29/allure/#suites/a657a03f5cf0e7f2aa2f3b2cec09b6fd/b0c9276acbc5217e/" target="_blank" rel="noopener noreferrer">
+  <a href="https://jenkins.autotests.cloud/job/035_Api_final_project_GrishinaML/8/allure/#suites" target="_blank" rel="noopener noreferrer">
     <img src="media/pictures/allure1.PNG" alt="Allure Test Suites" style="border: 1px solid #ddd; border-radius: 4px; padding: 5px; margin-top: 20px;">
   </a>
 </p>
@@ -169,7 +167,7 @@ _Allure Report_ — это визуализированный отчёт о те
 ### 📈 Анализ тестов
 
 <p align="center">
-  <a href="https://jenkins.autotests.cloud/job/035_vacancy_test_home/29/allure/#graph" target="_blank" rel="noopener noreferrer">
+  <a href="https://jenkins.autotests.cloud/job/035_Api_final_project_GrishinaML/8/allure/#graph" target="_blank" rel="noopener noreferrer">
     <img src="media/pictures/allure2.PNG" alt="Allure Analytics Graph" style="border: 1px solid #ddd; border-radius: 4px; padding: 5px; margin-top: 20px;">
   </a>
 </p>
@@ -200,7 +198,7 @@ _Allure TestOps_ — это платформа для управления те�
 
 <a id="уведомления-в-telegram"></a>
 
-# <img width="38" style="vertical-align:middle" title="Selenoid" src="media/icons/Telegram.png"> Результат выполнения автотестов в Телеграм
+# <img width="38" style="vertical-align:middle" title="Telegram" src="media/icons/telegram.PNG"> Результат выполнения автотестов в Телеграм
 
 После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет
 сообщение с отчетом о прогоне тестов.
@@ -213,17 +211,7 @@ _Allure TestOps_ — это платформа для управления те�
 
 ---
 
-<a id="видео-примера-запуска-тестов"></a>
 
-# <img width="38" style="vertical-align:middle" title="Selenoid" src="media/icons/Selenoid.png"> Видео примера запуска тестов в Selenoid
-
-В отчетах Allure для каждого теста прикреплен не только скриншот, но и видео прохождения теста
-
-<br>
-
-<p align="center">
-  <img src="media/Video/videogif.gif" alt="Demo" width="800">
-</p>
 
    </td>
   </tr>
