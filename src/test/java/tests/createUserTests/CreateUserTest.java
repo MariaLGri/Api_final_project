@@ -13,7 +13,7 @@ import static specs.SpecsList.registrationRequestSpec;
 
 public class CreateUserTest extends TestBase {
     @Test
-    @DisplayName("Проверка запроса POST на создание пользователя")
+    @DisplayName("Проверка запроса на создание пользователя")
     void checkCreateUserTest() {
 
         // 1. Подготовка тестовых данных

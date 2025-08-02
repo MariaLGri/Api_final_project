@@ -9,7 +9,7 @@
 </p>
 
 <div align="center">
-  <h2> ПРОЕКТ АВТОМАТИЗАЦИИ | <img src="media/logo_main_api.PNG" width="20" alt=""> REQRES</h2>
+  <h2> ПРОЕКТ API АВТОМАТИЗАЦИИ | <img src="media/logo_main_api.PNG" width="20" alt=""> REQRES</h2>
 </div>
 
 ---
@@ -25,7 +25,7 @@
 - [Пример Allure-отчета](#пример-allure-отчета)
 - [Интеграция](#Интеграция)
 - [Уведомления в Telegram](#уведомления-в-telegram)
-- [Видео примера запуска тестов](#видео-примера-запуска-тестов)
+
 
 ---
 
@@ -38,48 +38,36 @@
 <p align="center">
   <a href="https://www.jetbrains.com/idea/" target="_blank"><img width="50px" title="IntelliJ IDEA" src="media/icons/Intelij_IDEA.png" alt="IntelliJ IDEA"></a>
   <a href="https://www.java.com/" target="_blank"><img width="50px" title="Java" src="media/icons/Java.png" alt="Java"></a>
-  <a href="https://selenide.org/" target="_blank"><img width="50px" title="Selenide" src="media/icons/Selenide.svg" alt="Selenide"></a>
-  <a href="https://aerokube.com/selenoid/" target="_blank"><img width="50px" title="Selenoid" src="media/icons/Selenoid.png" alt="Selenoid"></a>
   <a href="https://docs.qameta.io/allure/" target="_blank"><img width="50px" title="Allure Report" src="media/icons/Allure_Report.png" alt="Allure Report"></a>
   <a href="https://gradle.org/" target="_blank"><img width="50px" title="Gradle" src="media/icons/Gradle.png" alt="Gradle"></a>
   <a href="https://junit.org/junit5/" target="_blank"><img width="50px" title="JUnit5" src="media/icons/JUnit5.png" alt="JUnit5"></a>
   <a href="https://github.com/" target="_blank"><img width="50px" title="GitHub" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub"></a>
   <a href="https://www.jenkins.io/" target="_blank"><img width="50px" title="Jenkins" src="media/icons/Jenkins.png" alt="Jenkins"></a>
+  <a href="https://rest-assured.io/" target="_blank"><img width="50px" title="RestAssured" src="media/icons/RestAssured.svg" alt="Jenkins"></a>
   <a href="https://docs.qameta.io/allure-testops/" target="_blank"><img width="50px" title="AllureTestOps" src="media/icons/AllureTestOps.svg" alt="Allure TestOps"></a>
   <a href="https://telegram.org/" target="_blank"><img width="50px" title="Telegram" src="media/icons/Telegram.png" alt="Telegram"></a>
 </p>
 
 <br>
 
-Тесты в данном проекте написаны на языке <code>Java</code> с использованием фреймворка для тестирования <code>
-Selenide</code>, сборщик - <code>Gradle</code>. <code>JUnit 5</code> задействован в качестве фреймворка модульного
+Тесты в данном проекте написаны на языке <code>Java</code> с использованием фреймворка <code>
+RestAssured</code>, сборщик - <code>Gradle</code>. <code>JUnit 5</code> задействован в качестве фреймворка модульного
 тестирования.
 
-При прогоне тестов для запуска браузеров используется <code>Selenoid</code>.
-Для удаленного запуска реализована джоба в <code>Jenkins</code> с формированием Allure-отчета и отправкой результатов
-в <code>Telegram</code> при помощи бота. Так же реализована интеграция с <code>Allure TestOps</code> и <code>
-Jira</code>.
+При прогоне тестов применяется Allure-отчет с отправкой результатов в <code>Telegram</code> при помощи бота. Так же реализована интеграция с <code>Allure TestOps</code>
+
 
 <br>
 
 ### ✅ Проверки
 
-- ✔️ **Проверка открытия страницы вакансии Auto QA (Java)**
-- ✔️ **Проверка перехода на страницу краткого описания компании из вакансии**
-- ✔️ **Проверка видимости общей оценки компании**
- 
-<br>
-
-- ✔️ **Проверка главной страницы, открытие, логотип, меню**
-- ✔️ **Проверка смены языка на главной странице**
+- ✔️ **Проверка запроса на регистрацию**
+- ✔️ **Проверка запроса на получение списка пользователей**
+- ✔️ **Проверка запроса на создание пользователя**
+- ✔️ **Проверка запроса на редактирование пользователя**
+- ✔️ **Проверка запроса на удаление пользователя**
 
 <br>
-
-- ✔️ **Проверка страницы 'Работа у нас', открытие, текст**
-- ✔️ **Тесты формы обратной связи**
-
-<br>
-
 
 <a id="запуск-автотестов"></a>
 
@@ -87,13 +75,10 @@ Jira</code>.
 
 ```
 gradle clean test
--Dbrowser=chrome 
--DbrowserVersion=127.0 
--DbrowserSize=1920x1200 
--DselenoidUrl=selenoid.autotests.cloud 
+
 ```
 
-При выполнении данной команды в терминале IDE тесты запустятся удаленно в <code>Selenoid</code>.
+При выполнении данной команды в терминале IDE тесты запустятся на выполнение.
 
 <br>
 

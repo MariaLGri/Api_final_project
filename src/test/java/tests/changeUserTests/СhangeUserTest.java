@@ -14,7 +14,7 @@ import static specs.SpecsList.registrationResponse200Spec;
 
 public class СhangeUserTest extends TestBase {
     @Test
-    @DisplayName("Проверка запроса PUT на редактирование пользователя")
+    @DisplayName("Проверка запроса на редактирование пользователя")
     void checkUpdateUserTest() {
         СhangeUserRequestLombokTehModel upData = new СhangeUserRequestLombokTehModel();
         upData.setName("morpheusТЕСТ");
