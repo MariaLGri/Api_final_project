@@ -1,5 +1,6 @@
 package tests.deleteUserTests;
 
+import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import tests.TestBase;
@@ -9,10 +10,14 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import static specs.SpecsList.deleteUserResponse204Spec;
 import static specs.SpecsList.registrationRequestSpec;
-
+@Epic("API Tests")
+@Feature("Работа с пользователями")
+@DisplayName("Удаление пользователя")
 public class DeleteUserTest extends TestBase {
 
     @Test
+    @Severity(SeverityLevel.NORMAL)
+    @Owner("Гришина М.Л.")
     @DisplayName("Проверка запроса на удаление пользователя")
     void checkDeleteUserTest() {
         step("Удаление пользователя", () ->

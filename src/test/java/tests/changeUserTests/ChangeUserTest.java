@@ -1,19 +1,24 @@
 package tests.changeUserTests;
 
+import io.qameta.allure.*;
 import models.lombok.ChangeUserResponseLombokTehModel;
 import models.lombok.ChangeUserRequestLombokTehModel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import tests.TestBase;
-
 import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 import static specs.SpecsList.registrationRequestSpec;
 import static specs.SpecsList.registrationResponse200Spec;
-
+@Epic("API Tests")
+@Feature("Управление пользователями")
+@Story("Редактирование пользователей")
+@DisplayName("Тесты на редактирование пользователей")
 public class ChangeUserTest extends TestBase {
     @Test
+    @Severity(SeverityLevel.CRITICAL)
+    @Owner("Гришина М.Л.")
     @DisplayName("Проверка запроса на редактирование пользователя")
     void checkUpdateUserTest() {
         ChangeUserRequestLombokTehModel upData = new ChangeUserRequestLombokTehModel();

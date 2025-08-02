@@ -1,18 +1,22 @@
 package tests.listUserTests;
 
+import io.qameta.allure.*;
 import models.lombok.ListUserResponseLombokTehModel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import tests.TestBase;
-
 import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 import static specs.SpecsList.registrationRequestSpec;
 import static specs.SpecsList.registrationResponse200Spec;
-
+@Epic("API Tests")
+@Feature("Работа с пользователями")
+@DisplayName("Получение списка пользователей")
 public class ListUserTest extends TestBase {
     @Test
+    @Severity(SeverityLevel.NORMAL)
+    @Owner("Гришина М.Л.")
     @DisplayName("Проверка запроса на получение списка пользователей")
     void checkListUsersTest() {
         ListUserResponseLombokTehModel response = step("Выполнение запроса списка пользователей", () ->
