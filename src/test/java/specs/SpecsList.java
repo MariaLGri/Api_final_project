@@ -14,6 +14,8 @@ import static io.restassured.http.ContentType.JSON;
 public class SpecsList {
     public static RequestSpecification registrationRequestSpec = with()
             .filter(withCustomTemplates())
+            .baseUri(System.getProperty("baseURI", "https://reqres.in"))
+            .basePath(System.getProperty("basePath", "/api"))
             .header("x-api-key", "reqres-free-v1")
             .contentType(JSON)
             .log().uri();
