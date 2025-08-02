@@ -71,10 +71,12 @@ RestAssured</code>, сборщик - <code>Gradle</code>. <code>JUnit 5</code> �
 
 <a id="запуск-автотестов"></a>
 
-### ✨ | 🖥️ Запуск автотестов из терминала | ✨
+### ✨ | 🖥️ Запуск автотестов | ✨
 
 ```
-gradle clean test
+ gradle clean test -Denv=local
+ gradle clean test -Denv=remote
+
 
 ```
 

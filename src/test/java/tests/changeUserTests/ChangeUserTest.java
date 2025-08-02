@@ -1,7 +1,7 @@
 package tests.changeUserTests;
 
 import models.lombok.ChangeUserResponseLombokTehModel;
-import models.lombok.СhangeUserRequestLombokTehModel;
+import models.lombok.ChangeUserRequestLombokTehModel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import tests.TestBase;
@@ -12,11 +12,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static specs.SpecsList.registrationRequestSpec;
 import static specs.SpecsList.registrationResponse200Spec;
 
-public class СhangeUserTest extends TestBase {
+public class ChangeUserTest extends TestBase {
     @Test
     @DisplayName("Проверка запроса на редактирование пользователя")
     void checkUpdateUserTest() {
-        СhangeUserRequestLombokTehModel upData = new СhangeUserRequestLombokTehModel();
+        ChangeUserRequestLombokTehModel upData = new ChangeUserRequestLombokTehModel();
         upData.setName("morpheusТЕСТ");
         upData.setJob("zion residentТЕСТ");
         ChangeUserResponseLombokTehModel response = step("Отправка PUT запроса", () ->
@@ -43,14 +43,14 @@ public class СhangeUserTest extends TestBase {
     @Test
     @DisplayName("Проверка запроса Patch на редактирование пользователя")
     void checkPatchUpdateUserTest() {
-        СhangeUserRequestLombokTehModel upData = new СhangeUserRequestLombokTehModel();
+        ChangeUserRequestLombokTehModel upData = new ChangeUserRequestLombokTehModel();
         upData.setName("morpheusТЕСТ22изменен");
         upData.setJob("zion residentТЕСТ22изменен");
         ChangeUserResponseLombokTehModel response = step("Отправка Patch запроса", () ->
                 given(registrationRequestSpec)
                         .body(upData)
                         .when()
-                        .put("/users/2")
+                        .patch("/users/2")
                         .then()
                         .spec(registrationResponse200Spec)
                         .extract()

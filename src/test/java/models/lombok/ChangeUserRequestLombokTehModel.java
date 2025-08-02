@@ -3,7 +3,7 @@ package models.lombok;
 import lombok.Data;
 
 @Data
-public class СhangeUserRequestLombokTehModel {
+public class ChangeUserRequestLombokTehModel {
     String name,job;
 
 }
