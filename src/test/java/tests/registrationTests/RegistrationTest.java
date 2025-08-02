@@ -21,6 +21,7 @@ import static specs.SpecsList.registrationResponse200Spec;
 @Feature("Регистрация пользователей")
 @Story("Позитивные сценарии регистрации")
 @Owner("Гришина М.Л.")
+@DisplayName("Тесты на регистрацию пользователей")
 public class RegistrationTest extends TestBase {
     @Test
     @DisplayName("Успешная регистрация пользователя с валидными данными")
