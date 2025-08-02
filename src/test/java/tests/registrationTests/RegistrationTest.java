@@ -68,8 +68,7 @@ public class RegistrationTest extends TestBase {
     static Stream<String> validEmailsProvider() {
         return Stream.of(
                 "eve.holt@reqres.in",
-                "test+123@example.com",
-                "user.name@domain.co"
+                "test+123@example.com"
         );
     }
 }

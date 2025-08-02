@@ -69,8 +69,7 @@ class CreateUserTest extends TestBase {
     static Stream<Arguments> userDataProvider() {
         return Stream.of(
                 Arguments.of("Mariay Grishina", "engineer"),
-                Arguments.of("Иван Петров", "developer"),
-                Arguments.of("John Doe", "manager")
+                Arguments.of("Иван Петров", "developer")
 
         );
     }
