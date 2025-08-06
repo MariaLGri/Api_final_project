@@ -178,7 +178,7 @@ _Allure Report_ — это визуализированный отчёт о те
 
 <a id="Интеграция"></a>
 
-# <a href="https://allure.autotests.cloud/project/4774/dashboards" target="_blank"><img width="38" src="media/icons/AllureTestOps.svg" alt="Allure TestOps"> Интеграция с Allure TestOps</a>
+# <a href="https://allure.autotests.cloud/launch/47530/tree?search=W3siaWQiOiJzdGF0dXMiLCJ0eXBlIjoidGVzdFN0YXR1c0FycmF5IiwidmFsdWUiOlsicGFzc2VkIl19XQ%3D%3D&treeId=0" target="_blank"><img width="38" src="media/icons/AllureTestOps.svg" alt="Allure TestOps"> Интеграция с Allure TestOps</a>
 _Allure TestOps_ — это платформа для управления тестированием на базе Allure Report с расширенными возможностями.
 
 ### _Основные функции:_
@@ -189,7 +189,7 @@ _Allure TestOps_ — это платформа для управления те�
 
 <p align="center">
    <br>
-<img src="media/pictures/A_testOps.png">
+<img src="media/pictures/allureTestOpsApi.PNG">
 </p>
 
 <br>
