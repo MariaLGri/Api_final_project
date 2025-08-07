@@ -1,7 +1,7 @@
 
 <p align="center">
   <a href="https://reqres.in/" target="_blank" title="Официальный сайт" style="text-decoration: none;">
-    <img src="media/pictures/logo_main_api.PNG" alt="HAR Logo" width="900" height="300" style="border: 0;">
+    <img src="media/pictures/logo_main_api.PNG" alt="HAR Logo" width="900" height="200" style="border: 0;">
     <br>
     <span style="color: #0066cc; font-size: 1.25rem; font-weight: 600; margin-top: 8px; display: inline-block;">
          </span>
@@ -9,7 +9,7 @@
 </p>
 
 <div align="center">
-  <h2> ПРОЕКТ API АВТОМАТИЗАЦИИ | <img src="media/logo_main_api.PNG" width="20" alt=""> REQRES</h2>
+  <h2> ПРОЕКТ API АВТОМАТИЗАЦИИ | <a href="https://reqres.in/" target="_blank" title="Официальный сайт" style="text-decoration: none;"> REQRES </a> </h2>
 </div>
 
 ---
@@ -90,7 +90,7 @@ RestAssured</code>, сборщик - <code>Gradle</code>. <code>JUnit 5</code> �
 <a id="сборка-в-jenkins"></a>
 <p align="center"> 
 
-# <a href="https://jenkins.autotests.cloud/job/035_Api_final_project_GrishinaML/" target="_blank"><img width="40px" style="vertical-align:middle" src="media/pictures/Jenkins_logo.png" alt="Jenkins Logo"> Сборка в Jenkins
+# <img width="40px" style="vertical-align:middle" src="media/pictures/Jenkins_logo.png" alt="Jenkins Logo"> Сборка в <a href="https://jenkins.autotests.cloud/job/035_Api_final_project_GrishinaML/" target="_blank"> Jenkins </a>
 
 </p>
 
@@ -126,7 +126,7 @@ Report</code>, при клике на которую откроется стра
 
 
 
-# <img width="38" style="vertical-align:middle" alt="Allure Report" src="media/icons/Allure_Report.png"> Пример Allure-отчета
+# <img width="38" style="vertical-align:middle" alt="Allure Report" src="media/icons/Allure_Report.png"> Пример <a href="https://jenkins.autotests.cloud/job/035_Api_final_project_GrishinaML/8/allure/" target="_blank" rel="noopener noreferrer">Allure  </a> отчета 
 _Allure Report_ — это визуализированный отчёт о тестировании, который делает результаты запусков автотестов удобными для анализа.
 
 ### _Преимущества:_
@@ -178,7 +178,7 @@ _Allure Report_ — это визуализированный отчёт о те
 
 <a id="Интеграция"></a>
 
-# <a href="https://allure.autotests.cloud/launch/47530/tree?search=W3siaWQiOiJzdGF0dXMiLCJ0eXBlIjoidGVzdFN0YXR1c0FycmF5IiwidmFsdWUiOlsicGFzc2VkIl19XQ%3D%3D&treeId=0" target="_blank"><img width="38" src="media/icons/AllureTestOps.svg" alt="Allure TestOps"> Интеграция с Allure TestOps</a>
+# <img width="38" src="media/icons/AllureTestOps.svg" alt="Allure TestOps"> Интеграция с <a href="https://allure.autotests.cloud/launch/47530/tree?search=W3siaWQiOiJzdGF0dXMiLCJ0eXBlIjoidGVzdFN0YXR1c0FycmF5IiwidmFsdWUiOlsicGFzc2VkIl19XQ%3D%3D&treeId=0" target="_blank">Allure TestOps</a>
 _Allure TestOps_ — это платформа для управления тестированием на базе Allure Report с расширенными возможностями.
 
 ### _Основные функции:_
