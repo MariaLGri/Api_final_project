@@ -7,7 +7,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.util.Map;
 
 public class ProjectConfig {
-     private final WebConfig webConfig;
+    private final WebConfig webConfig;
 
     public ProjectConfig(WebConfig webConfig) {
         this.webConfig = webConfig;
@@ -32,7 +32,6 @@ public class ProjectConfig {
             Configuration.browserCapabilities = capabilities;
         }
     }
-
 
 
 }

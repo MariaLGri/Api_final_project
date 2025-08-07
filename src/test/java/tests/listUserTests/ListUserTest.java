@@ -13,10 +13,10 @@ import static specs.SpecsList.registrationResponse200Spec;
 @Epic("API Tests")
 @Feature("Работа с пользователями")
 @DisplayName("Получение списка пользователей")
+@Owner("Гришина М.Л.")
 public class ListUserTest extends TestBase {
     @Test
     @Severity(SeverityLevel.NORMAL)
-    @Owner("Гришина М.Л.")
     @DisplayName("Проверка запроса на получение списка пользователей")
     void checkListUsersTest() {
         ListUserResponseLombokTehModel response = step("Выполнение запроса списка пользователей", () ->

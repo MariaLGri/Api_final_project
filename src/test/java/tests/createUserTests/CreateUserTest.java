@@ -17,21 +17,20 @@ import static specs.SpecsList.registrationRequestSpec;
 @Epic("API Tests")
 @Feature("Управление пользователями")
 @Story("Создание пользователей")
+@Owner("Гришина М.Л.")
 @DisplayName("Параметризированные тесты создания пользователей")
 class CreateUserTest extends TestBase {
 
     @ParameterizedTest(name = "Создание пользователя: имя={0}, должность={1}")
     @MethodSource("userDataProvider")
     @Severity(SeverityLevel.CRITICAL)
-    @Owner("Гришина М.Л.")
     @Description("Проверка создания пользователя с разными валидными данными")
     void checkCreateUserTest(String name, String job) {
-        // 1. Подготовка тестовых данных
+
         CreateUserRequestLombokTehModel requestData = new CreateUserRequestLombokTehModel();
         requestData.setName(name);
         requestData.setJob(job);
 
-        // 2. Отправка запроса и получение ответа
         CreateUserResponseLombokTehModel response = step("Создание пользователя " + name, () ->
                 given(registrationRequestSpec)
                         .body(requestData)
@@ -43,7 +42,6 @@ class CreateUserTest extends TestBase {
                         .as(CreateUserResponseLombokTehModel.class)
         );
 
-        // 3. Проверки ответа
         step("Проверка данных ответа для " + name, () -> {
             assertThat(response.getName())
                     .as("Имя пользователя должно соответствовать отправленному")
@@ -62,7 +60,7 @@ class CreateUserTest extends TestBase {
                     .isNotBlank();
         });
 
-        // Сохраняем ID для последующих тестов
+
         userId = response.getId();
     }
 

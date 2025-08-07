@@ -13,11 +13,11 @@ import static specs.SpecsList.registrationRequestSpec;
 @Epic("API Tests")
 @Feature("Работа с пользователями")
 @DisplayName("Удаление пользователя")
+@Owner("Гришина М.Л.")
 public class DeleteUserTest extends TestBase {
 
     @Test
     @Severity(SeverityLevel.NORMAL)
-    @Owner("Гришина М.Л.")
     @DisplayName("Проверка запроса на удаление пользователя")
     void checkDeleteUserTest() {
         step("Удаление пользователя", () ->

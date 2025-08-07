@@ -16,6 +16,7 @@ import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 import static specs.SpecsList.registrationRequestSpec;
 import static specs.SpecsList.registrationResponse200Spec;
+
 @Severity(SeverityLevel.CRITICAL)
 @Epic("API Tests")
 @Feature("Регистрация пользователей")
@@ -24,6 +25,7 @@ import static specs.SpecsList.registrationResponse200Spec;
 @DisplayName("Тесты на регистрацию пользователей")
 public class RegistrationTest extends TestBase {
     @Test
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Успешная регистрация пользователя с валидными данными")
     void checkTokenObjectTest() {
         RegistrationRequestLombokTehModel authData = new RegistrationRequestLombokTehModel();
@@ -58,6 +60,7 @@ public class RegistrationTest extends TestBase {
 
     @ParameterizedTest(name = "Регистрация с email: {0}")
     @MethodSource("validEmailsProvider")
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Параметризованная проверка валидных email")
     void testRegistrationWithDifferentEmails(String email) {
         RegistrationRequestLombokTehModel authData = new RegistrationRequestLombokTehModel();
