@@ -1,7 +1,7 @@
 
 <p align="center">
   <a href="https://reqres.in/" target="_blank" title="Официальный сайт" style="text-decoration: none;">
-    <img src="media/pictures/logo_main_api.PNG" alt="HAR Logo" width="100%" height="300px" style="border: 5;">
+    <img src="media/pictures/logo_main_api.PNG" alt="HAR Logo" width="100%" height="125" style="border: 5;">
     <br>
     <span style="color: #0066cc; font-size: 1.25rem; font-weight: 600; margin-top: 8px; display: inline-block;">
          </span>
