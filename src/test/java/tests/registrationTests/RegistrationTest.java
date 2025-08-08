@@ -30,7 +30,7 @@ public class RegistrationTest extends TestBase {
     void checkTokenObjectTest() {
         RegistrationRequestLombokTehModel authData = new RegistrationRequestLombokTehModel();
         authData.setEmail("eve.holt@reqres.in");
-        authData.setPassword("cityslicka");
+        authData.setPassword("pistol");
 
         RegistrationResponseLombokTehModel responseModel = step("Выполнение запроса на регистрацию", () ->
                 given(registrationRequestSpec)

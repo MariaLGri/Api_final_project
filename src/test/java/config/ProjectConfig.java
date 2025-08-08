@@ -14,8 +14,11 @@ public class ProjectConfig {
     }
 
     public void apiConfig() {
+
         RestAssured.baseURI = webConfig.getBaseUrl();
+        RestAssured.basePath = webConfig.getBasePath();
     }
+
 
     public void webConfig() {
         Configuration.baseUrl = webConfig.getBaseUrl();
