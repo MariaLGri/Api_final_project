@@ -18,7 +18,6 @@ public class TestBase {
 
     @BeforeAll
     static void installConfiguration() {
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         ProjectConfig projectConfiguration = new ProjectConfig(webConfig);
         projectConfiguration.webConfig();
         projectConfiguration.apiConfig();
